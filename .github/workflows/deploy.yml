@@ -20,15 +20,15 @@ jobs:
       - name: Run tests
         run: docker run -e CI=true twmsc/react-test npm run test
  
-      - run: docker build -t twmsc/multi-client ./client
-      - run: docker build -t twmsc/multi-nginx ./nginx
-      - run: docker build -t twmsc/multi-server ./server
-      - run: docker build -t twmsc/multi-worker ./worker
+      - run: docker build -t mingsungchao/multi-client ./client
+      - run: docker build -t mingsungchao/multi-nginx ./nginx
+      - run: docker build -t mingsungchao/multi-server ./server
+      - run: docker build -t mingsungchao/multi-worker ./worker
  
-      - run: docker push twmsc/multi-client
-      - run: docker push twmsc/multi-nginx
-      - run: docker push twmsc/multi-server
-      - run: docker push twmsc/multi-worker
+      - run: docker push mingsungchao/multi-client
+      - run: docker push mingsungchao/multi-nginx
+      - run: docker push mingsungchao/multi-server
+      - run: docker push mingsungchao/multi-worker
  
       - name: Generate deployment package
         run: zip -r deploy.zip . -x '*.git*'
