@@ -21,7 +21,7 @@ function App() {
           </a>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
-          <h1 className='App-title'>Fib Calculator version Kubernetes</h1>
+          <h1 className='App-title'>Fib Calculator Updated</h1>
         </header>
         <div>
           <Route exact path="/" component={Fib} />
